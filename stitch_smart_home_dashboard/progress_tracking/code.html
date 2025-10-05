@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<title>DigiCal AI - Progress</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#11d493",
+            "background-light": "#f6f8f7",
+            "background-dark": "#10221c",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="text-white dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full bg-background-light/10 dark:bg-white/10">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-background-dark dark:text-background-light text-lg font-bold flex-1 text-center pr-10">Progress</h1>
+</div>
+<div class="border-b border-primary/20 dark:border-primary/20 px-4">
+<div class="flex gap-8">
+<a class="flex flex-col items-center justify-center border-b-2 border-primary text-primary pb-3 pt-4" href="#">
+<p class="text-sm font-bold">Weight</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-primary/60 dark:text-primary/60 pb-3 pt-4" href="#">
+<p class="text-sm font-bold">Nutrition</p>
+</a>
+</div>
+</div>
+</header>
+<main class="p-4">
+<section class="mb-8">
+<div class="rounded-xl bg-primary/10 dark:bg-primary/10 p-4">
+<div class="flex flex-col gap-1">
+<p class="text-background-dark dark:text-background-light text-base font-medium">Weight</p>
+<p class="text-background-dark dark:text-background-light text-4xl font-bold">145 lbs</p>
+<div class="flex gap-2 items-center">
+<p class="text-primary/80 dark:text-primary/80 text-sm font-normal">Last 30 days</p>
+<div class="flex items-center text-red-500 text-sm font-medium">
+<svg fill="currentColor" height="16" viewBox="0 0 256 256" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M200,168V88a8,8,0,0,0-16,0v80a8,8,0,0,0,16,0Zm-40,0V48a8,8,0,0,0-16,0v120a8,8,0,0,0,16,0Zm-40,0V120a8,8,0,0,0-16,0v48a8,8,0,0,0,16,0Zm-40,0V96a8,8,0,0,0-16,0v72a8,8,0,0,0,16,0Z" transform="rotate(45 128 128)"></path></svg>
+<span>-2%</span>
+</div>
+</div>
+</div>
+<div class="mt-4 min-h-[180px]">
+<svg fill="none" height="100%" preserveAspectRatio="none" viewBox="0 0 472 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H0V109Z" fill="url(#paint0_linear_chart)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#11d493" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_chart" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#11d493" stop-opacity="0.3"></stop>
+<stop offset="1" stop-color="#11d493" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+<div class="flex justify-between mt-2">
+<p class="text-primary/80 dark:text-primary/80 text-xs font-bold">10/20</p>
+<p class="text-primary/80 dark:text-primary/80 text-xs font-bold">10/27</p>
+<p class="text-primary/80 dark:text-primary/80 text-xs font-bold">11/03</p>
+<p class="text-primary/80 dark:text-primary/80 text-xs font-bold">11/10</p>
+<p class="text-primary/80 dark:text-primary/80 text-xs font-bold">11/17</p>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<div>
+<h2 class="text-background-dark dark:text-background-light text-xl font-bold mb-3">Weekly Overview</h2>
+<div class="space-y-2">
+<div class="flex items-center gap-4 p-3 rounded-lg bg-background-light dark:bg-primary/10">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M239.43,133l-32-80h0a8,8,0,0,0-9.16-4.84L136,62V40a8,8,0,0,0-16,0V65.58L54.26,80.19A8,8,0,0,0,48.57,85h0v.06L16.57,165a7.92,7.92,0,0,0-.57,3c0,23.31,24.54,32,40,32s40-8.69,40-32a7.92,7.92,0,0,0-.57-3L66.92,93.77,120,82V208H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16H136V78.42L187,67.1,160.57,133a7.92,7.92,0,0,0-.57,3c0,23.31,24.54,32,40,32s40-8.69,40-32A7.92,7.92,0,0,0,239.43,133ZM56,184c-7.53,0-22.76-3.61-23.93-14.64L56,109.54l23.93,59.82C78.76,180.39,63.53,184,56,184Zm144-32c-7.53,0-22.76-3.61-23.93-14.64L200,77.54l23.93,59.82C222.76,148.39,207.53,152,200,152Z"></path></svg>
+</div>
+<div>
+<p class="text-background-dark dark:text-background-light font-medium">Current Weight</p>
+<p class="text-primary/80 dark:text-primary/80 text-sm">145 lbs</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg bg-background-light dark:bg-primary/10">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M239.43,133l-32-80h0a8,8,0,0,0-9.16-4.84L136,62V40a8,8,0,0,0-16,0V65.58L54.26,80.19A8,8,0,0,0,48.57,85h0v.06L16.57,165a7.92,7.92,0,0,0-.57,3c0,23.31,24.54,32,40,32s40-8.69,40-32a7.92,7.92,0,0,0-.57-3L66.92,93.77,120,82V208H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16H136V78.42L187,67.1,160.57,133a7.92,7.92,0,0,0-.57,3c0,23.31,24.54,32,40,32s40-8.69,40-32A7.92,7.92,0,0,0,239.43,133ZM56,184c-7.53,0-22.76-3.61-23.93-14.64L56,109.54l23.93,59.82C78.76,180.39,63.53,184,56,184Zm144-32c-7.53,0-22.76-3.61-23.93-14.64L200,77.54l23.93,59.82C222.76,148.39,207.53,152,200,152Z"></path></svg>
+</div>
+<div>
+<p class="text-background-dark dark:text-background-light font-medium">Starting Weight</p>
+<p class="text-primary/80 dark:text-primary/80 text-sm">147 lbs</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg bg-background-light dark:bg-primary/10">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M232,64H208V56a16,16,0,0,0-16-16H64A16,16,0,0,0,48,56v8H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-28.49,64.64-63.51,64.9H128a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"></path></svg>
+</div>
+<div>
+<p class="text-background-dark dark:text-background-light font-medium">Goal Weight</p>
+<p class="text-primary/80 dark:text-primary/80 text-sm">143 lbs</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-background-dark dark:text-background-light text-xl font-bold mt-8 mb-3">Achievements</h2>
+<div class="space-y-2">
+<div class="flex items-center gap-4 p-3 rounded-lg bg-background-light dark:bg-primary/10">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M183.89,153.34a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68ZM216,144a88,88,0,0,1-176,0c0-27.92,11-56.47,32.66-84.85a8,8,0,0,1,11.93-.89l24.12,23.41,22-60.41a8,8,0,0,1,12.63-3.41C165.21,36,216,84.55,216,144Zm-16,0c0-46.09-35.79-85.92-58.21-106.33L119.52,98.74a8,8,0,0,1-13.09,3L80.06,76.16C64.09,99.21,56,122,56,144a72,72,0,0,0,144,0Z"></path></svg>
+</div>
+<div>
+<p class="text-background-dark dark:text-background-light font-medium">Longest Streak</p>
+<p class="text-primary/80 dark:text-primary/80 text-sm">7 days</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg bg-background-light dark:bg-primary/10">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M183.89,153.34a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68ZM216,144a88,88,0,0,1-176,0c0-27.92,11-56.47,32.66-84.85a8,8,0,0,1,11.93-.89l24.12,23.41,22-60.41a8,8,0,0,1,12.63-3.41C165.21,36,216,84.55,216,144Zm-16,0c0-46.09-35.79-85.92-58.21-106.33L119.52,98.74a8,8,0,0,1-13.09,3L80.06,76.16C64.09,99.21,56,122,56,144a72,72,0,0,0,144,0Z"></path></svg>
+</div>
+<div>
+<p class="text-background-dark dark:text-background-light font-medium">Current Streak</p>
+<p class="text-primary/80 dark:text-primary/80 text-sm">5 days</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg bg-background-light dark:bg-primary/10">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path></svg>
+</div>
+<div>
+<p class="text-background-dark dark:text-background-light font-medium">Meals Tracked</p>
+<p class="text-primary/80 dark:text-primary/80 text-sm">100 meals</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-background-dark dark:text-background-light text-xl font-bold mt-8 mb-3">Insights</h2>
+<div class="space-y-2">
+<div class="flex items-center gap-4 p-3 rounded-lg bg-background-light dark:bg-primary/10">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M80,120h96a8,8,0,0,0,8-8V64a8,8,0,0,0-8-8H80a8,8,0,0,0-8,8v48A8,8,0,0,0,80,120Zm8-48h80v32H88ZM200,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V40A16,16,0,0,0,200,24Zm0,192H56V40H200ZM100,148a12,12,0,1,1-12-12A12,12,0,0,1,100,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,148Zm-80,40a12,12,0,1,1-12-12A12,12,0,0,1,100,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,188Z"></path></svg>
+</div>
+<div>
+<p class="text-background-dark dark:text-background-light font-medium">Average Daily Intake</p>
+<p class="text-primary/80 dark:text-primary/80 text-sm">1500 calories</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg bg-background-light dark:bg-primary/10">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M183.89,153.34a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68ZM216,144a88,88,0,0,1-176,0c0-27.92,11-56.47,32.66-84.85a8,8,0,0,1,11.93-.89l24.12,23.41,22-60.41a8,8,0,0,1,12.63-3.41C165.21,36,216,84.55,216,144Zm-16,0c0-46.09-35.79-85.92-58.21-106.33L119.52,98.74a8,8,0,0,1-13.09,3L80.06,76.16C64.09,99.21,56,122,56,144a72,72,0,0,0,144,0Z"></path></svg>
+</div>
+<div>
+<p class="text-background-dark dark:text-background-light font-medium">Average Daily Burn</p>
+<p class="text-primary/80 dark:text-primary/80 text-sm">2000 calories</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<nav class="flex justify-around border-t border-primary/20 pt-2 pb-3">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary/60 dark:text-primary/60" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
+</div>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary/60 dark:text-primary/60" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H80a8,8,0,0,0,6.66-3.56L100.28,48h55.43l13.63,20.44A8,8,0,0,0,176,72h32a8,8,0,0,1,8,8ZM128,88a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,88Zm0,72a28,28,0,1,1,28-28A28,28,0,0,1,128,160Z"></path></svg>
+</div>
+<p class="text-xs font-medium">Scanner</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary/60 dark:text-primary/60" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"></path></svg>
+</div>
+<p class="text-xs font-medium">Diary</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM104,144a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32,0a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32,0a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"></path></svg>
+</div>
+<p class="text-xs font-medium">Progress</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary/60 dark:text-primary/60" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
+</div>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

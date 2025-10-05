@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>DigiCal AI Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#11d493",
+            "background-light": "#f6f8f7",
+            "background-dark": "#10221c",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center justify-between p-4">
+<div class="w-12"></div>
+<h1 class="text-lg font-bold text-gray-900 dark:text-white flex-1 text-center">Dashboard</h1>
+<div class="flex w-12 justify-end">
+<button class="p-2 rounded-full text-gray-600 dark:text-gray-400 hover:bg-primary/20 dark:hover:bg-primary/30">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow p-4 space-y-8">
+<section class="bg-white/5 dark:bg-black/10 p-6 rounded-xl space-y-4">
+<div class="flex items-center justify-between">
+<h2 class="font-bold text-gray-900 dark:text-white">Daily Calorie Intake</h2>
+<p class="text-sm font-medium text-primary">1300 / 2000 kcal</p>
+</div>
+<div class="relative w-full h-40 flex items-center justify-center">
+<svg class="w-full h-full" viewBox="0 0 36 36">
+<path class="text-gray-300 dark:text-gray-700" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="65, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="text-3xl font-bold text-gray-900 dark:text-white">700</span>
+<span class="text-sm text-gray-500 dark:text-gray-400">Remaining</span>
+</div>
+</div>
+<p class="text-center text-sm text-gray-500 dark:text-gray-400">You're doing great!</p>
+</section>
+<section class="bg-white/5 dark:bg-black/10 p-6 rounded-xl space-y-4">
+<h2 class="font-bold text-gray-900 dark:text-white">Macro Breakdown</h2>
+<div class="grid grid-cols-3 gap-4 text-center">
+<div>
+<p class="text-2xl font-bold text-primary">45g</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Protein</p>
+</div>
+<div>
+<p class="text-2xl font-bold text-primary">120g</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Carbs</p>
+</div>
+<div>
+<p class="text-2xl font-bold text-primary">30g</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Fat</p>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="text-lg font-bold text-gray-900 dark:text-white px-2">Recent Meals</h2>
+<div class="space-y-2">
+<div class="flex items-center gap-4 bg-white/5 dark:bg-black/10 p-3 rounded-lg">
+<div class="w-14 h-14 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA8VObzVNKwM5-uM-qeM5m1tYHYNov_IfBniRT6QpNSNwMCs2B7-1WjcTvQooUBzt8Xc68h6zQgcyTpELIWno5LQEvcYSnYEgl3kmMpjLnPfINK9n1Z0OmYoFkxFLDHmWa9Sj_ZUOpUga2KvEqPwq_y2qnVsefDxkgPQwEqVOWbWlDO6dFmcqOSkKyzMvCW212AW_vSTCvaibPl0zFjJDEsoZmnJ73gut8_h9eHmMA2kShK-CHjE-B-LzwhtzjdEG0SpKGQAH7v");'></div>
+<div class="flex-1">
+<p class="font-semibold text-gray-900 dark:text-white">Oatmeal with Berries</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Breakfast - 350 kcal</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 bg-white/5 dark:bg-black/10 p-3 rounded-lg">
+<div class="w-14 h-14 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1Imp2JxDETi2U1Q6XkgcCIWIfG4wQMTdMvaFYWR_mQzowOKH4MyiNkzBiaSfQ9LVvbebANSD7ZmgIGeAxmCo3iVEurG3L8HHf4kqBuI4iCTABtAFpjxp2RLekOBLB-Msw_0kKQaiPkrNtlsomscZWkg_CtsYMO71Bg3ulIk8SXdzUPdS9muSIo2SnGUP9PdDHvQpSn1aTji8DfdWB6nb7urrC0B1s5lXwHeU4br7y5MqbEk0iFZE8opp2brHuIYR_ltJmIf_X");'></div>
+<div class="flex-1">
+<p class="font-semibold text-gray-900 dark:text-white">Chicken Salad Sandwich</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Lunch - 550 kcal</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 bg-white/5 dark:bg-black/10 p-3 rounded-lg">
+<div class="w-14 h-14 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxAXD2eVGZpJIcQbUHcfRtLvyxh7vtOtUrUPsm956H42wH2hn6Is9FZ-z_6Ocn8cBojvlIj5uObdUgpbMxaBFDjZuUz9P_LTg0ZKYiETuBdxzA7yW4vrZ-cueEMzTHlyzQB_DGxAInsRV1Kgu31S4O5WwTRD1SO3PHo-IGXO0A_IIfqI77o3xozX3LNyyagdFbvJjicgJJY_IxjtIPqjQZxqDPVayYz_DPZEKvhXaBybuEQxjIgGFB55mL0ekUteS5hwQZ-eUP");'></div>
+<div class="flex-1">
+<p class="font-semibold text-gray-900 dark:text-white">Salmon with Roasted Vegetables</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Dinner - 400 kcal</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="text-lg font-bold text-gray-900 dark:text-white px-2">Achievements</h2>
+<div class="space-y-2">
+<div class="flex items-center gap-4 bg-white/5 dark:bg-black/10 p-3 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">local_fire_department</span>
+</div>
+<p class="flex-1 font-medium text-gray-800 dark:text-gray-200">7-Day Streak</p>
+</div>
+<div class="flex items-center gap-4 bg-white/5 dark:bg-black/10 p-3 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">emoji_events</span>
+</div>
+<p class="flex-1 font-medium text-gray-800 dark:text-gray-200">First Meal Logged</p>
+</div>
+</div>
+</section>
+<section class="bg-primary/20 dark:bg-primary/30 p-4 rounded-lg">
+<h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Insights</h2>
+<p class="text-sm text-gray-800 dark:text-gray-200">Did you know? Adding a handful of nuts to your diet can boost your protein intake and keep you feeling full longer.</p>
+</section>
+</main>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-white/10 dark:border-black/20">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg w-1/5 text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+<span class="text-xs font-medium">Scanner</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">book</span>
+<span class="text-xs font-medium">Diary</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="text-xs font-medium">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg w-1/5 text-gray-500 dark:text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#11d493",
+              "background-light": "#f6f8f7",
+              "background-dark": "#10221c",
+            },
+            fontFamily: {
+              "display": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="flex items-center p-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-background-light dark:bg-background-dark/50 hover:bg-primary/10 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined text-gray-800 dark:text-white">arrow_back_ios_new</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold text-gray-900 dark:text-white pr-10">Profile</h1>
+</header>
+<div class="flex flex-col items-center p-4">
+<div class="h-32 w-32 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMUmbJnXcBrLm5SO-t8nCUvhsvk5lwype-99gW7CMTFh9jxMoBRhXQJ2iC-qul7xTOEi9CcNPegMn-NUzkxa8EWSDlSg7ppFv2_dZysFKtgDCJnh97TMWxkk9VrH0ITNaQpZHWg-3OH62uVYyjl60W4KmZZNxlFmuAdeouCvJgrx9Fb6Bdl2fM8rBPwEAQQ9hcTSUEagksNjgsq46X9FPZFG7n9l7V5yS1EO25SiDg3hs-1ZxxJBypX7KZONu3-ZUMcX1ObRzV");'></div>
+<div class="mt-4 text-center">
+<p class="text-2xl font-bold text-gray-900 dark:text-white">Sophia Bennett</p>
+<div class="mt-1 flex items-center justify-center gap-2">
+<span class="inline-block rounded-full bg-primary/20 px-3 py-1 text-sm font-semibold text-primary">Premium</span>
+<p class="text-sm text-gray-500 dark:text-gray-400">Joined 2023</p>
+</div>
+</div>
+</div>
+<div class="px-4">
+<div class="rounded-lg bg-background-light dark:bg-black/20 overflow-hidden">
+<h3 class="px-4 pt-4 text-lg font-bold text-gray-900 dark:text-white">Goals</h3>
+<div class="mt-2 flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10" href="#">
+<div>
+<p class="font-medium text-gray-800 dark:text-gray-200">Daily Calorie Goal</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">1,800 kcal</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10" href="#">
+<div>
+<p class="font-medium text-gray-800 dark:text-gray-200">Protein Goal</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">150g</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10" href="#">
+<div>
+<p class="font-medium text-gray-800 dark:text-gray-200">Fat Goal</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">50g</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10" href="#">
+<div>
+<p class="font-medium text-gray-800 dark:text-gray-200">Carb Goal</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">200g</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">arrow_forward_ios</span>
+</a>
+</div>
+</div>
+<div class="mt-6 rounded-lg bg-background-light dark:bg-black/20 overflow-hidden">
+<h3 class="px-4 pt-4 text-lg font-bold text-gray-900 dark:text-white">Settings</h3>
+<div class="mt-2 flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10" href="#">
+<p class="font-medium text-gray-800 dark:text-gray-200">Premium</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10" href="#">
+<p class="font-medium text-gray-800 dark:text-gray-200">Sync Devices</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10" href="#">
+<p class="font-medium text-gray-800 dark:text-gray-200">Notifications</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10" href="#">
+<p class="font-medium text-gray-800 dark:text-gray-200">Appearance</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10" href="#">
+<p class="font-medium text-gray-800 dark:text-gray-200">Feedback</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10" href="#">
+<p class="font-medium text-gray-800 dark:text-gray-200">Help</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">arrow_forward_ios</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky bottom-0 border-t border-gray-200/10 bg-background-light/80 pb-3 pt-2 backdrop-blur-lg dark:bg-background-dark/80">
+<nav class="flex justify-around">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+<p class="text-xs font-medium">Scanner</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">book</span>
+<p class="text-xs font-medium">Diary</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<p class="text-xs font-medium">Progress</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

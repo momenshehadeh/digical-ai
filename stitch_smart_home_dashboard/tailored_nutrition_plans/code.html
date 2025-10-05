@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#11d493",
+              "background-light": "#f6f8f7",
+              "background-dark": "#10221c",
+            },
+            fontFamily: {
+              display: ["Manrope"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex h-screen flex-col">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="text-gray-800 dark:text-white">
+<span class="material-symbols-outlined"> arrow_back </span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white">Nutrition Plans</h1>
+<div class="w-8"></div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-4">
+<h2 class="px-4 pb-4 text-2xl font-bold text-gray-900 dark:text-white">Choose a Plan</h2>
+<div class="space-y-4">
+<div class="group flex cursor-pointer items-center gap-4 rounded-xl bg-primary/10 p-4 transition-all hover:bg-primary/20">
+<div class="h-20 w-20 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjm-73N-97lfwmD4isT5hzdVIZxZxiLM0lZ6Cj13dAwWydfeCxyY01S0AsgZwF1jj_0rjOyS6PNG9FwoJ-aaQ6ghE4Jk-T4Nu38sWcqESBW9JPkR0rGC1da8KW8Y2ndRpXWPibvtsEcsivUU0BvOiGJJC7OcAgk4gGa9Tdlppsr-8Xe39baDJSD-PqNXFRt0JwJ4-3e_egLWdjH4JMNG92aCNHNhd11VvvtK-ojeax8TBRVv4ouMzGYLyUAPeQE2u700pkb41I");'></div>
+<div class="flex-1">
+<h3 class="font-bold text-gray-900 dark:text-white">Weight Loss</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300">Reduce your calorie intake to shed pounds effectively.</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500 transition-transform group-hover:translate-x-1"> chevron_right </span>
+</div>
+<div class="group flex cursor-pointer items-center gap-4 rounded-xl bg-primary/10 p-4 transition-all hover:bg-primary/20">
+<div class="h-20 w-20 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDJurFes0fIlYQZ-B0BvVgqx_QjVH36dY8HOfvb4HI5ZQEQ9XCHvzWdTV8Ra2Pb8s1CSY1M43VjszQ5qoY8LuuviBEKUTZwyqbtGrlefwlZv_Sibs0vQ7_TArMO-Ltcu1QT5TXkDhXQiATptFjS1AtyIxOAb6me8iw8pjBSeLK_tLKekkSgSIwbAZT_QXuFKKpd4-OFbzjo9yzfGVBjnBsfK1ysnV5Y77zupPqPXHmOXgHp73RzMEQgB2p-7HgdUm9NiDAUseiP");'></div>
+<div class="flex-1">
+<h3 class="font-bold text-gray-900 dark:text-white">Muscle Building</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300">Increase protein and calorie intake to support muscle growth.</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500 transition-transform group-hover:translate-x-1"> chevron_right </span>
+</div>
+<div class="group flex cursor-pointer items-center gap-4 rounded-xl bg-primary/10 p-4 transition-all hover:bg-primary/20">
+<div class="h-20 w-20 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuApX-X-C65ybvm93zQ0cKMvyggMC9exEcAvl5nUbhUTI1ccqB3jjPSdUFK0dHHpCtnENh3667zbBs1lHA6PM8i0G60dycKEv_VADtEK2Kc4UiaBK63djVcYMflAhq-9hjSDUakiQGD3OISQuHirza6doTzp2ENwCTq3QFy-CmLqUafuwHsXKY5oNYjqUVL4meAHlewp1JiX_OF5YUHmBIbuY8fDCgV5VUDq7YGMMY4_3Pg-6RuGghFlCpGZv4k25uRBhlc1LtnR");'></div>
+<div class="flex-1">
+<h3 class="font-bold text-gray-900 dark:text-white">Keto Diet</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300">High-fat, low-carb diet to shift your body into ketosis.</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500 transition-transform group-hover:translate-x-1"> chevron_right </span>
+</div>
+<div class="group flex cursor-pointer items-center gap-4 rounded-xl bg-primary/10 p-4 transition-all hover:bg-primary/20">
+<div class="h-20 w-20 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDvmNQ-SpU3NVFy5AbqnNVtZAdvg6KJoll0dDCF69x4HARKP_MpBzA1WYeIxAKXAglpZ5NPTUY2P2QjyVqcI0jTvkIyI0O5iQdK-4LsaXKeDAhFJB-7y_Dv3wf3JJWq_dfiXlPYA_2IkC4t25Q4NcWbfaTfiwMBFckEtZ8UO9dS4YFpwoZ9gsKwuKWibpS-Yd1RUfZOc_jjcqUqSWS8Dy8e9x0FrHsOUcSiL6ZGH85iDuA6-S3CqIJkXFNnjFH_7DGRDocWtkb");'></div>
+<div class="flex-1">
+<h3 class="font-bold text-gray-900 dark:text-white">Intermittent Fasting</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300">Cycle between periods of eating and fasting to manage weight.</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500 transition-transform group-hover:translate-x-1"> chevron_right </span>
+</div>
+<div class="group flex cursor-pointer items-center gap-4 rounded-xl bg-primary/10 p-4 transition-all hover:bg-primary/20">
+<div class="h-20 w-20 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD29FviWMNx0wCUgU5NEYl8Cr4e6UYttOgIKHYtaYFi9YriQ-PGggWmETihX8Ygevi2IRdUd_N1Y-LbKxsdlEyaqTT702oq5VeDnlffAy5g3Rmu9vErIi4gi6UVCWpXGJXEllP2HcwenE1hOXOKhuMcOhIqbBfHM9gJN2okVsxz6Joq3QFv6f7cDR-QKZTV0u0O8jVDYJg4KymfhwawJkEAcm9J7Eg1RDdiE8xOEMKEae4QIW_mp-NLYS9Ji_UYkSOKn3XTOa5J");'></div>
+<div class="flex-1">
+<h3 class="font-bold text-gray-900 dark:text-white">Healthy Eating</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300">Balanced diet with a variety of nutrients for overall well-being.</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500 transition-transform group-hover:translate-x-1"> chevron_right </span>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex justify-around border-t border-primary/20 p-2">
+<a class="flex flex-col items-center gap-1 p-2 text-gray-600 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> home </span>
+<span class="text-xs">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 rounded-full bg-primary/10 p-2 text-primary" href="#">
+<span class="material-symbols-outlined"> photo_camera </span>
+<span class="text-xs">Scanner</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-600 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> book </span>
+<span class="text-xs">Diary</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-600 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> leaderboard </span>
+<span class="text-xs">Progress</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-600 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> person </span>
+<span class="text-xs">Profile</span>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>
